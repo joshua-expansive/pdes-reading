@@ -1,0 +1,5 @@
+# Color Accessibility
+While color often plays a significant role in designs, it’s essential to not rely solely on color to communicate hierarchy, affordances, or relationships, as it can make your product more difficult to use. Always double-check that your color choices are accessible for people with varying degrees of color blindness. A few ways to do that is to use multiple visual cues to communicate interaction and meaning to users and avoid low contrast text and background colors. Ensuring the accessibility of your color choices will also account for situational factors that may impact color visibility, such as inadequate lighting, screen glare, and screen size.
+
+![[color-accessibility.png]]
+###### Source: [Color blindness: how to design an accessible user interface](https://uxdesign.cc/color-blindness-in-user-interfaces-66c27331b858)

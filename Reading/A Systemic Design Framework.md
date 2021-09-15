@@ -1,0 +1,3 @@
+In 2004 the [UK Design Council](https://www.designcouncil.org.uk/who-we-are) developed the Double Diamond in an effort to help non-designers understand the design process. It is now one of the most recognized design frameworks in the world due to it's memorable shape and adaptability. IBM's [Infinity Loop](https://www.ibm.com/design/thinking/page/framework/loop) Design thinking framework is based on the Double Diamond. 
+
+![](https://prodesigncurriculum.s3.us-east-2.amazonaws.com/double-diamond-search.png)

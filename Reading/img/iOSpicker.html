@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/ -->
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="js-focus-visible" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<meta name="Author" content="Apple Inc.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="shortcut icon" href="https://developer.apple.com/favicon.ico">
+<link rel="icon" href="https://developer.apple.com/favicon.ico">
+<link rel="mask-icon" href="https://developer.apple.com/apple-logo.svg" color="#333333">
+
+<link rel="stylesheet" href="./iOSpicker_files/global.dist.css" type="text/css">
+
+
+<script src="./iOSpicker_files/jquery-3.6.0.min.js"></script>
+<script src="./iOSpicker_files/settings.js"></script>
+<script src="./iOSpicker_files/language-locales.js"></script>
+
+<script async="" src="./iOSpicker_files/jquery.retinate.js"></script>
+<script async="" src="./iOSpicker_files/global.js"></script>
+<script async="" src="./iOSpicker_files/global-logout.js"></script>
+
+	<link rel="stylesheet" href="./iOSpicker_files/fonts" type="text/css">
+<link rel="stylesheet" href="./iOSpicker_files/fonts(1)" type="text/css">
+<link rel="stylesheet" href="./iOSpicker_files/fonts(2)" type="text/css">
+<link rel="stylesheet" href="./iOSpicker_files/fonts(3)" type="text/css">
+
+	<link rel="stylesheet" href="./iOSpicker_files/human-interface-guidelines.css" type="text/css">
+	<link rel="stylesheet" href="./iOSpicker_files/app.css" type="text/css">
+	<script src="./iOSpicker_files/app.js"></script>
+	<script src="./iOSpicker_files/jquery.bxslider.min.js"></script>
+
+	<title>Pickers - Controls - iOS - Human Interface Guidelines - Apple Developer</title>
+	<meta name="omni_page" content="Human Interface Guidelines - (English) - iOS - Controls - Pickers">
+	<meta name="Description" content="Learn about designing apps for iOS.">
+	<meta name="robots" content="noodp,noydir"> 	<link rel="stylesheet" href="./iOSpicker_files/ios.css" type="text/css"> <style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}</style></head>
+<body data-hignav-item-name="iOS" data-hignav-is-beta="false" id="controls" class="pickers" data-color-scheme="light" data-new-gr-c-s-check-loaded="14.1015.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+
+	<link rel="stylesheet" href="./iOSpicker_files/globalnav.css" type="text/css">
+
+<link rel="stylesheet" href="./iOSpicker_files/suggest-lang.css" type="text/css">
+<div id="suggest-lang" class="ribbon hide">
+	<div class="ribbon-content-wrapper">
+		<div class="ribbon-content row">
+			<div class="column large-12 large-centered">
+				<a id="suggest-closer" class="icon icon-after icon-reset"></a>
+				<p><a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" id="suggest-link" class="ribbon-link more">View in English</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="./iOSpicker_files/suggest-lang.js"></script>
+<aside id="ac-gn-segmentbar" class="ac-gn-segmentbar" lang="en-US" dir="ltr">
+</aside>
+<input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate">
+<nav id="ac-globalnav" class="js no-touch no-windows" role="navigation" aria-label="Global" data-hires="false" data-analytics-region="global nav" lang="en-US" dir="ltr" data-www-domain="www.apple.com" data-store-locale="us" data-store-root-path="/us" data-store-api="/[storefront]/shop/bag/status" data-search-locale="en_US" data-search-suggestions-api="/search-services/suggestions/" data-search-defaultlinks-api="/search-services/suggestions/defaultlinks/" data-search-suggestions-enabled="false">
+	<div class="ac-gn-content">
+		<ul class="ac-gn-header">
+			<li class="ac-gn-item ac-gn-menuicon">
+				<label class="ac-gn-menuicon-label" for="ac-gn-menustate" aria-hidden="true">
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-top">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-top"></span>
+					</span>
+					<span class="ac-gn-menuicon-bread ac-gn-menuicon-bread-bottom">
+						<span class="ac-gn-menuicon-bread-crust ac-gn-menuicon-bread-crust-bottom"></span>
+					</span>
+				</label>
+				<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#ac-gn-menustate" role="button" class="ac-gn-menuanchor ac-gn-menuanchor-open" id="ac-gn-menuanchor-open">
+					<span class="ac-gn-menuanchor-label">Global Nav Open Menu</span>
+				</a>
+				<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" role="button" class="ac-gn-menuanchor ac-gn-menuanchor-close" id="ac-gn-menuanchor-close">
+					<span class="ac-gn-menuanchor-label">Global Nav Close Menu</span>
+				</a>
+			</li>
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple-developer" href="https://developer.apple.com/" data-analytics-title="appledeveloper home" id="ac-gn-firstfocus-small">
+					<span class="ac-gn-link-text">Apple Developer</span>
+				</a>
+			</li>
+		</ul>
+		<div class="ac-gn-search-placeholder-container" role="search">
+			<div class="ac-gn-search ac-gn-search-small">
+				<a id="ac-gn-link-search-small" class="ac-gn-link" href="https://developer.apple.com/search/" data-analytics-title="search" data-analytics-click="search" data-analytics-intrapage-link="" aria-label="Search Developer" role="button" aria-haspopup="true">
+					<div class="ac-gn-search-placeholder-bar">
+						<div class="ac-gn-search-placeholder-input">
+							<div class="ac-gn-search-placeholder-input-text" aria-hidden="true">
+								<div class="ac-gn-link-search ac-gn-search-placeholder-input-icon"></div>
+								<span class="ac-gn-search-placeholder">Search Developer</span>
+							</div>
+						</div>
+						<div class="ac-gn-searchview-close ac-gn-searchview-close-small ac-gn-search-placeholder-searchview-close">
+							<span class="ac-gn-searchview-close-cancel" aria-hidden="true">Cancel</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<ul class="ac-gn-list">
+			<li class="ac-gn-item ac-gn-apple">
+				<a class="ac-gn-link ac-gn-link-apple-developer" href="https://developer.apple.com/" data-analytics-title="appledeveloper home" id="ac-gn-firstfocus">
+					<span class="ac-gn-link-text">Apple Developer</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-discover">
+				<a class="ac-gn-link ac-gn-link-discover" href="https://developer.apple.com/discover/" data-analytics-title="discover">
+					<span class="ac-gn-link-text">Discover</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-design">
+				<a class="ac-gn-link ac-gn-link-design" href="https://developer.apple.com/design/" data-analytics-title="design">
+					<span class="ac-gn-link-text">Design</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-develop">
+				<a class="ac-gn-link ac-gn-link-develop" href="https://developer.apple.com/develop/" data-analytics-title="develop">
+					<span class="ac-gn-link-text">Develop</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-distribute">
+				<a class="ac-gn-link ac-gn-link-distribute" href="https://developer.apple.com/distribute/" data-analytics-title="distribute">
+					<span class="ac-gn-link-text">Distribute</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-dsupport">
+				<a class="ac-gn-link ac-gn-link-dsupport" href="https://developer.apple.com/support/" data-analytics-title="dsupport">
+					<span class="ac-gn-link-text">Support</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-account">
+				<a class="ac-gn-link ac-gn-link-account" href="https://developer.apple.com/account/" data-analytics-title="account">
+					<span class="ac-gn-link-text">Account</span>
+					</a>
+			</li>
+			<li class="ac-gn-item ac-gn-item-menu ac-gn-search" role="search">
+				<a id="ac-gn-link-search" class="ac-gn-link ac-gn-link-search" href="https://developer.apple.com/search/" data-analytics-title="search" data-analytics-click="search" data-analytics-intrapage-link="" aria-label="Search Developer" role="button" aria-haspopup="true"></a>
+			</li>
+		</ul>
+		<aside id="ac-gn-searchview" class="ac-gn-searchview" role="search" data-analytics-region="search">
+			<div class="ac-gn-searchview-content">
+				<div class="ac-gn-searchview-bar">
+					<div class="ac-gn-searchview-bar-wrapper">
+						<form id="ac-gn-searchform" class="ac-gn-searchform" action="https://developer.apple.com/search/" method="get">
+							<div class="ac-gn-searchform-wrapper">
+								<input id="ac-gn-searchform-input" class="ac-gn-searchform-input" type="text" name="q" aria-label="Search Developer" placeholder="Search Developer" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="true" aria-owns="quicklinks suggestions">
+								<button id="ac-gn-searchform-submit" class="ac-gn-searchform-submit" type="submit" disabled="" aria-label="Submit Search"></button>
+								<button id="ac-gn-searchform-reset" class="ac-gn-searchform-reset" type="reset" disabled="" aria-label="Clear Search">
+										<span class="ac-gn-searchform-reset-background"></span>
+									</button>
+							</div>
+						</form>
+						<button id="ac-gn-searchview-close-small" class="ac-gn-searchview-close ac-gn-searchview-close-small" aria-label="Cancel Search">
+								<span class="ac-gn-searchview-close-cancel" aria-hidden="true">
+									Cancel
+								</span>
+							</button>
+					</div>
+				</div>
+				<aside id="ac-gn-searchresults" class="ac-gn-searchresults" data-string-quicklinks="Quick Links" data-string-suggestions="Suggested Searches" data-string-noresults="">
+                    <section class="ac-gn-searchresults-section ac-gn-searchresults-section-defaultlinks">
+                        <div class="ac-gn-searchresults-section-wrapper">
+							<div class="search-group-checkbox hidden"><input id="group-input" type="checkbox" name="group-filter" value="hig">Limit search to <span id="group-search-label"></span></div>
+                            <h3 class="ac-gn-searchresults-header ac-gn-searchresults-animated">Quick Links</h3>
+                            <ul class="ac-gn-searchresults-list" id="defaultlinks" role="listbox">
+                            <li class="ac-gn-searchresults-item ac-gn-searchresults-animated"><a href="https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-15-beta-release-notes/" id="search-group-link-0" class="ac-gn-searchresults-link ac-gn-searchresults-link-defaultlinks">iOS &amp; iPadOS 15 Beta Release Notes</a></li><li class="ac-gn-searchresults-item ac-gn-searchresults-animated"><a href="https://developer.apple.com/ios/" id="search-group-link-1" class="ac-gn-searchresults-link ac-gn-searchresults-link-defaultlinks">iOS 15</a></li><li class="ac-gn-searchresults-item ac-gn-searchresults-animated"><a href="https://developer.apple.com/ipados/" id="search-group-link-2" class="ac-gn-searchresults-link ac-gn-searchresults-link-defaultlinks">iPadOS 15</a></li><li class="ac-gn-searchresults-item ac-gn-searchresults-animated"><a href="https://developer.apple.com/news/" id="search-group-link-3" class="ac-gn-searchresults-link ac-gn-searchresults-link-defaultlinks">News</a></li><li class="ac-gn-searchresults-item ac-gn-searchresults-animated"><a href="https://developer.apple.com/documentation/xcode/" id="search-group-link-4" class="ac-gn-searchresults-link ac-gn-searchresults-link-defaultlinks">Xcode</a></li></ul>
+                            <span role="status" class="ac-gn-searchresults-count" aria-live="polite">5 Quick Links</span>
+                        </div>
+                    </section>
+                </aside>
+			</div>
+			<button id="ac-gn-searchview-close" class="ac-gn-searchview-close" aria-label="Cancel Search">
+					<span class="ac-gn-searchview-close-wrapper">
+						<span class="ac-gn-searchview-close-left"></span>
+						<span class="ac-gn-searchview-close-right"></span>
+					</span>
+				</button>
+		</aside>
+			</div>
+</nav>
+<div class="ac-gn-blur"></div>
+<div id="ac-gn-curtain" class="ac-gn-curtain"></div>
+<div id="ac-gn-placeholder" class="ac-nav-placeholder"></div>
+<script src="./iOSpicker_files/ac-globalnav.built.js"></script><div id="ac-gn-viewport-emitter"> </div>
+<link rel="stylesheet" href="./iOSpicker_files/search.css">
+<script src="./iOSpicker_files/search.js"></script>
+
+	<!-- metrics -->
+<script>
+    /* RSID: */
+    var s_account="awdappledeveloper"
+</script>	
+<script src="./iOSpicker_files/analytics.js"></script>
+<script>
+    s.pageName= AC && AC.Tracking && AC.Tracking.pageName();
+    s.channel="www.en.developer"
+    s.channel="www.hig.developer";
+
+    
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)
+</script>
+<!-- /metrics -->
+	<link rel="stylesheet" property="stylesheet" href="./iOSpicker_files/localnav.css" type="text/css">
+<input type="checkbox" id="localnav-menustate" class="localnav-menustate">
+<nav id="localnav" class="localnav localnav-scrim" data-sticky="" role="navigation">
+    <div class="localnav-wrapper">
+        <div class="localnav-background"></div>
+        <div class="localnav-content">
+            <h2 class="localnav-title">
+                <a class="ac-ln-title-logo" href="https://developer.apple.com/design/human-interface-guidelines/" data-analytics-title="product index">Human Interface Guidelines</a>
+            </h2>
+
+            <div class="localnav-menu">
+                <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#localnav-menustate" class="localnav-menucta-anchor localnav-menucta-anchor-open" id="localnav-menustate-open">
+                    <span class="localnav-menucta-anchor-label">Open Menu</span>
+                </a>
+                <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" class="localnav-menucta-anchor localnav-menucta-anchor-close" id="localnav-menustate-close">
+                    <span class="localnav-menucta-anchor-label">Close Menu</span>
+                </a>
+                <div class="localnav-menu-tray">
+
+						<div class="doc-nav-container">
+
+							<nav id="doc-nav" class="doc-nav localnav-menu-items" role="navigation" aria-label="Local Navigation" data-hires="true">
+								<ul class="side">
+																		<li class="nav-overview has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/">iOS</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-themes">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/">Themes</a>
+											</li>
+																						<li class="nav-interface-essentials">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/interface-essentials/">Interface Essentials</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-app-architecture has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/">App Architecture</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-launching">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/launching/">Launching</a>
+											</li>
+																						<li class="nav-onboarding">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/onboarding/">Onboarding</a>
+											</li>
+																						<li class="nav-loading">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/loading/">Loading</a>
+											</li>
+																						<li class="nav-modality">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/">Modality</a>
+											</li>
+																						<li class="nav-navigation">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/navigation/">Navigation</a>
+											</li>
+																						<li class="nav-accessing-user-data">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/">Accessing User Data</a>
+											</li>
+																						<li class="nav-settings">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/settings/">Settings</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-user-interaction has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/">User Interaction</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-3d-touch">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/3d-touch/">3D Touch</a>
+											</li>
+																						<li class="nav-apple-pencil-and-scribble">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/apple-pencil-and-scribble/">Apple Pencil and Scribble</a>
+											</li>
+																						<li class="nav-audio">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/audio/">Audio</a>
+											</li>
+																						<li class="nav-authentication">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/authentication/">Authentication</a>
+											</li>
+																						<li class="nav-data-entry">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/data-entry/">Data Entry</a>
+											</li>
+																						<li class="nav-drag-and-drop">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/drag-and-drop/">Drag and Drop</a>
+											</li>
+																						<li class="nav-feedback">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/feedback/">Feedback</a>
+											</li>
+																						<li class="nav-file-handling">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/file-handling/">File Handling</a>
+											</li>
+																						<li class="nav-game-controllers">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/game-controllers/">Game Controllers</a>
+											</li>
+																						<li class="nav-gestures">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/">Gestures</a>
+											</li>
+																						<li class="nav-haptics">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/haptics/">Haptics</a>
+											</li>
+																						<li class="nav-near-field-communication">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/near-field-communication/">Near Field Communication</a>
+											</li>
+																						<li class="nav-pointers">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/pointers/">Pointers (iPadOS)</a>
+											</li>
+																						<li class="nav-spatial-interactions">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/spatial-interactions/">Spatial Interactions</a>
+											</li>
+																						<li class="nav-undo-and-redo">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/undo-and-redo/">Undo and Redo</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-system-capabilities has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/">System Capabilities</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-augmented-reality">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/">Augmented Reality</a>
+											</li>
+																						<li class="nav-home-screen-actions">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/home-screen-actions/">Home Screen Actions</a>
+											</li>
+																						<li class="nav-multitasking">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/multitasking/">Multitasking</a>
+											</li>
+																						<li class="nav-multiple-windows">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/multiple-windows/">Multiple Windows</a>
+											</li>
+																						<li class="nav-notifications">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/">Notifications</a>
+											</li>
+																						<li class="nav-printing">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/printing/">Printing</a>
+											</li>
+																						<li class="nav-quick-look">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/quick-look/">Quick Look</a>
+											</li>
+																						<li class="nav-ratings-and-reviews">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/ratings-and-reviews/">Ratings and Reviews</a>
+											</li>
+																						<li class="nav-screenshots">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/screenshots/">Screenshots</a>
+											</li>
+																						<li class="nav-tv-providers">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/tv-providers/">TV Providers</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-visual-design has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/">Visual Design</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-adaptivity-and-layout">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/">Adaptivity and Layout</a>
+											</li>
+																						<li class="nav-animation">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/animation/">Animation</a>
+											</li>
+																						<li class="nav-branding">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/branding/">Branding</a>
+											</li>
+																						<li class="nav-color">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/">Color</a>
+											</li>
+																						<li class="nav-dark-mode">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/">Dark Mode</a>
+											</li>
+																						<li class="nav-launch-screen">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/launch-screen/">Launch Screen</a>
+											</li>
+																						<li class="nav-materials">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/materials/">Materials</a>
+											</li>
+																						<li class="nav-terminology">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/terminology/">Terminology</a>
+											</li>
+																						<li class="nav-typography">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/">Typography</a>
+											</li>
+																						<li class="nav-video">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/video/">Video</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-icons-and-images has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/">Icons and Images</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-image-size-and-resolution">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/">Image Size and Resolution</a>
+											</li>
+																						<li class="nav-app-icon">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/">App Icon</a>
+											</li>
+																						<li class="nav-system-icons">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/system-icons/">System Icons</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-bars has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/">Bars</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-navigation-bars">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/navigation-bars/">Navigation Bars</a>
+											</li>
+																						<li class="nav-search-bars">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/search-bars/">Search Bars</a>
+											</li>
+																						<li class="nav-sidebars">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/sidebars/">Sidebars</a>
+											</li>
+																						<li class="nav-status-bars">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/status-bars/">Status Bars</a>
+											</li>
+																						<li class="nav-tab-bars">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/tab-bars/">Tab Bars</a>
+											</li>
+																						<li class="nav-toolbars">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/toolbars/">Toolbars</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-views has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/">Views</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-action-sheets">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/action-sheets/">Action Sheets</a>
+											</li>
+																						<li class="nav-activity-views">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/activity-views/">Activity Views</a>
+											</li>
+																						<li class="nav-alerts">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/alerts/">Alerts</a>
+											</li>
+																						<li class="nav-collections">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/collections/">Collections</a>
+											</li>
+																						<li class="nav-image-views">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/image-views/">Image Views</a>
+											</li>
+																						<li class="nav-pages">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/pages/">Pages</a>
+											</li>
+																						<li class="nav-popovers">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/popovers/">Popovers</a>
+											</li>
+																						<li class="nav-scroll-views">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/scroll-views/">Scroll Views</a>
+											</li>
+																						<li class="nav-split-views">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/split-views/">Split Views</a>
+											</li>
+																						<li class="nav-tables">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/tables/">Tables</a>
+											</li>
+																						<li class="nav-text-views">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/text-views/">Text Views</a>
+											</li>
+																						<li class="nav-web-views">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/web-views/">Web Views</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-controls has-sublist selected open">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/">Controls</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-buttons">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/buttons/">Buttons</a>
+											</li>
+																						<li class="nav-color-wells">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/color-wells/">Color Wells</a>
+											</li>
+																						<li class="nav-context-menus">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/context-menus/">Context Menus</a>
+											</li>
+																						<li class="nav-edit-menus">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/edit-menus/">Edit Menus</a>
+											</li>
+																						<li class="nav-labels">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/labels/">Labels</a>
+											</li>
+																						<li class="nav-page-controls">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/page-controls/">Page Controls</a>
+											</li>
+																						<li class="nav-pickers selected">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/">Pickers</a>
+											</li>
+																						<li class="nav-progress-indicators">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/progress-indicators/">Progress Indicators</a>
+											</li>
+																						<li class="nav-pull-down-menus">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pull-down-menus/">Pull-Down Menus</a>
+											</li>
+																						<li class="nav-refresh-content-controls">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/refresh-content-controls/">Refresh Content Controls</a>
+											</li>
+																						<li class="nav-segmented-controls">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/segmented-controls/">Segmented Controls</a>
+											</li>
+																						<li class="nav-sliders">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/sliders/">Sliders</a>
+											</li>
+																						<li class="nav-steppers">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/steppers/">Steppers</a>
+											</li>
+																						<li class="nav-switches">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/switches/">Switches</a>
+											</li>
+																						<li class="nav-text-fields">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/text-fields/">Text Fields</a>
+											</li>
+																					</ul>
+									</li>
+																		<li class="nav-extensions has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/">Extensions</a>
+										<ul class="sub-side-page-list">
+
+																																	<li class="nav-custom-keyboards">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/custom-keyboards/">Custom Keyboards</a>
+											</li>
+																						<li class="nav-file-providers">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/file-providers/">File Providers</a>
+											</li>
+																						<li class="nav-messaging">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/messaging/">Messaging</a>
+											</li>
+																						<li class="nav-photo-editing">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/photo-editing/">Photo Editing</a>
+											</li>
+																						<li class="nav-sharing-and-actions">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/sharing-and-actions/">Sharing and Actions</a>
+											</li>
+																					</ul>
+									</li>
+																		<hr class="sidebar_nav_separator">
+								</ul>
+								<ul class="side sub-side">
+																																													<li class="side-platform">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/macos/">macOS</a>
+																			</li>
+																																				<li class="side-platform">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/tvos/">tvOS</a>
+																			</li>
+																																				<li class="side-platform">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/watchos/">watchOS</a>
+																			</li>
+																																				<li class="side-platform has-sublist">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/#technologies">Technologies</a>
+																														<ul class="sub-side-page-list">
+																																	<li class="nav-accessibility">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/accessibility/">Accessibility</a>
+											</li>
+																																												<li class="nav-airplay">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/airplay/">AirPlay</a>
+											</li>
+																																												<li class="nav-app-clips">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/app-clips/">App Clips</a>
+											</li>
+																																												<li class="nav-apple-pay">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/apple-pay/">Apple Pay</a>
+											</li>
+																																												<li class="nav-augmented-reality">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/">Augmented Reality</a>
+											</li>
+																																												<li class="nav-business-chat">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/business-chat/">Business Chat</a>
+											</li>
+																																												<li class="nav-carekit">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/carekit/">CareKit</a>
+											</li>
+																																												<li class="nav-carplay">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/carplay/">CarPlay</a>
+											</li>
+																																												<li class="nav-game-center">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/game-center/">Game Center</a>
+											</li>
+																																												<li class="nav-glyphs">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/glyphs/">Glyphs</a>
+											</li>
+																																												<li class="nav-healthkit">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/healthkit/">HealthKit</a>
+											</li>
+																																												<li class="nav-homekit">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/homekit/">HomeKit</a>
+											</li>
+																																												<li class="nav-icloud">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/icloud/">iCloud</a>
+											</li>
+																																												<li class="nav-in-app-purchase">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/in-app-purchase/">In-App Purchase</a>
+											</li>
+																																												<li class="nav-inclusion">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/inclusion/">Inclusion</a>
+											</li>
+																																												<li class="nav-live-photos">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/live-photos/">Live Photos</a>
+											</li>
+																																												<li class="nav-mac-catalyst">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/mac-catalyst/">Mac Catalyst</a>
+											</li>
+																																												<li class="nav-machine-learning">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/machine-learning/">Machine Learning</a>
+											</li>
+																																												<li class="nav-maps">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/maps/">Maps</a>
+											</li>
+																																												<li class="nav-researchkit">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/researchkit/">ResearchKit</a>
+											</li>
+																																												<li class="nav-right-to-left">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/right-to-left/">Right to Left</a>
+											</li>
+																																												<li class="nav-shareplay">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/shareplay/">SharePlay</a>
+											</li>
+																																												<li class="nav-sign-in-with-apple">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/">Sign in with Apple</a>
+											</li>
+																																												<li class="nav-siri">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/siri/">Siri</a>
+											</li>
+																																												<li class="nav-social-media">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/social-media/">Social Media</a>
+											</li>
+																																												<li class="nav-sf-symbols">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/sf-symbols/">SF Symbols</a>
+											</li>
+																																												<li class="nav-wallet">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/wallet/">Wallet</a>
+											</li>
+																																												<li class="nav-widgets">
+												<a href="https://developer.apple.com/design/human-interface-guidelines/widgets/">Widgets</a>
+											</li>
+																																</ul>
+																			</li>
+																										</ul>
+							</nav>
+
+						</div>
+	                    <ul class="localnav-menu-items">
+                        <li class="localnav-menu-item">
+                            <a href="https://developer.apple.com/design/human-interface-guidelines/" class="localnav-menu-link">Overview</a>
+                        </li>
+                        <li class="localnav-menu-item">
+                            <a href="https://developer.apple.com/design/resources/" class="localnav-menu-link">Resources</a>
+                        </li>
+                        <li class="localnav-menu-item">
+                            <a href="https://developer.apple.com/videos/design/" class="localnav-menu-link">Videos</a>
+                        </li>
+                        <li class="localnav-menu-item">
+                            <a href="https://developer.apple.com/design/whats-new/" class="localnav-menu-link">What's New</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="localnav-actions">
+                    <div class="localnav-action localnav-action-menucta" aria-hidden="true">
+                        <label for="localnav-menustate" class="localnav-menucta">
+                            <span class="localnav-menucta-chevron"></span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+<label id="localnav-curtain" for="localnav-menustate"></label>
+<script src="./iOSpicker_files/ac-localnav.built.js"></script>
+
+
+	
+	<main id="main" class="main main-hig" role="main">
+
+		<!-- HIG content -->
+		<section class="section">
+	        <div class="section-content">
+	            <div class="row">
+
+				<!-- Side navigation -->
+				<div class="column large-3 doc-nav-container small-hide" style="align-self: flex-end; top: initial;">
+					<nav id="doc-nav" class="doc-nav" role="navigation" aria-label="Local Navigation" data-hires="true">
+						<ul class="side">
+														<li class="nav-overview has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/">iOS</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-themes">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/">Themes</a>
+									</li>
+																		<li class="nav-interface-essentials">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/overview/interface-essentials/">Interface Essentials</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-app-architecture has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/">App Architecture</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-launching">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/launching/">Launching</a>
+									</li>
+																		<li class="nav-onboarding">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/onboarding/">Onboarding</a>
+									</li>
+																		<li class="nav-loading">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/loading/">Loading</a>
+									</li>
+																		<li class="nav-modality">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/">Modality</a>
+									</li>
+																		<li class="nav-navigation">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/navigation/">Navigation</a>
+									</li>
+																		<li class="nav-accessing-user-data">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/">Accessing User Data</a>
+									</li>
+																		<li class="nav-settings">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/settings/">Settings</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-user-interaction has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/">User Interaction</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-3d-touch">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/3d-touch/">3D Touch</a>
+									</li>
+																		<li class="nav-apple-pencil-and-scribble">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/apple-pencil-and-scribble/">Apple Pencil and Scribble</a>
+									</li>
+																		<li class="nav-audio">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/audio/">Audio</a>
+									</li>
+																		<li class="nav-authentication">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/authentication/">Authentication</a>
+									</li>
+																		<li class="nav-data-entry">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/data-entry/">Data Entry</a>
+									</li>
+																		<li class="nav-drag-and-drop">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/drag-and-drop/">Drag and Drop</a>
+									</li>
+																		<li class="nav-feedback">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/feedback/">Feedback</a>
+									</li>
+																		<li class="nav-file-handling">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/file-handling/">File Handling</a>
+									</li>
+																		<li class="nav-game-controllers">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/game-controllers/">Game Controllers</a>
+									</li>
+																		<li class="nav-gestures">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/gestures/">Gestures</a>
+									</li>
+																		<li class="nav-haptics">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/haptics/">Haptics</a>
+									</li>
+																		<li class="nav-near-field-communication">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/near-field-communication/">Near Field Communication</a>
+									</li>
+																		<li class="nav-pointers">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/pointers/">Pointers (iPadOS)</a>
+									</li>
+																		<li class="nav-spatial-interactions">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/spatial-interactions/">Spatial Interactions</a>
+									</li>
+																		<li class="nav-undo-and-redo">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/undo-and-redo/">Undo and Redo</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-system-capabilities has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/">System Capabilities</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-augmented-reality">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/">Augmented Reality</a>
+									</li>
+																		<li class="nav-home-screen-actions">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/home-screen-actions/">Home Screen Actions</a>
+									</li>
+																		<li class="nav-multitasking">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/multitasking/">Multitasking</a>
+									</li>
+																		<li class="nav-multiple-windows">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/multiple-windows/">Multiple Windows</a>
+									</li>
+																		<li class="nav-notifications">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/notifications/">Notifications</a>
+									</li>
+																		<li class="nav-printing">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/printing/">Printing</a>
+									</li>
+																		<li class="nav-quick-look">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/quick-look/">Quick Look</a>
+									</li>
+																		<li class="nav-ratings-and-reviews">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/ratings-and-reviews/">Ratings and Reviews</a>
+									</li>
+																		<li class="nav-screenshots">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/screenshots/">Screenshots</a>
+									</li>
+																		<li class="nav-tv-providers">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/tv-providers/">TV Providers</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-visual-design has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/">Visual Design</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-adaptivity-and-layout">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/">Adaptivity and Layout</a>
+									</li>
+																		<li class="nav-animation">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/animation/">Animation</a>
+									</li>
+																		<li class="nav-branding">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/branding/">Branding</a>
+									</li>
+																		<li class="nav-color">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/">Color</a>
+									</li>
+																		<li class="nav-dark-mode">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/">Dark Mode</a>
+									</li>
+																		<li class="nav-launch-screen">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/launch-screen/">Launch Screen</a>
+									</li>
+																		<li class="nav-materials">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/materials/">Materials</a>
+									</li>
+																		<li class="nav-terminology">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/terminology/">Terminology</a>
+									</li>
+																		<li class="nav-typography">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/">Typography</a>
+									</li>
+																		<li class="nav-video">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/video/">Video</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-icons-and-images has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/">Icons and Images</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-image-size-and-resolution">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/">Image Size and Resolution</a>
+									</li>
+																		<li class="nav-app-icon">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/">App Icon</a>
+									</li>
+																		<li class="nav-system-icons">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/system-icons/">System Icons</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-bars has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/">Bars</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-navigation-bars">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/navigation-bars/">Navigation Bars</a>
+									</li>
+																		<li class="nav-search-bars">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/search-bars/">Search Bars</a>
+									</li>
+																		<li class="nav-sidebars">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/sidebars/">Sidebars</a>
+									</li>
+																		<li class="nav-status-bars">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/status-bars/">Status Bars</a>
+									</li>
+																		<li class="nav-tab-bars">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/tab-bars/">Tab Bars</a>
+									</li>
+																		<li class="nav-toolbars">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/bars/toolbars/">Toolbars</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-views has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/">Views</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-action-sheets">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/action-sheets/">Action Sheets</a>
+									</li>
+																		<li class="nav-activity-views">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/activity-views/">Activity Views</a>
+									</li>
+																		<li class="nav-alerts">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/alerts/">Alerts</a>
+									</li>
+																		<li class="nav-collections">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/collections/">Collections</a>
+									</li>
+																		<li class="nav-image-views">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/image-views/">Image Views</a>
+									</li>
+																		<li class="nav-pages">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/pages/">Pages</a>
+									</li>
+																		<li class="nav-popovers">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/popovers/">Popovers</a>
+									</li>
+																		<li class="nav-scroll-views">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/scroll-views/">Scroll Views</a>
+									</li>
+																		<li class="nav-split-views">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/split-views/">Split Views</a>
+									</li>
+																		<li class="nav-tables">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/tables/">Tables</a>
+									</li>
+																		<li class="nav-text-views">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/text-views/">Text Views</a>
+									</li>
+																		<li class="nav-web-views">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/web-views/">Web Views</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-controls has-sublist selected open">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/">Controls</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-buttons">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/buttons/">Buttons</a>
+									</li>
+																		<li class="nav-color-wells">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/color-wells/">Color Wells</a>
+									</li>
+																		<li class="nav-context-menus">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/context-menus/">Context Menus</a>
+									</li>
+																		<li class="nav-edit-menus">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/edit-menus/">Edit Menus</a>
+									</li>
+																		<li class="nav-labels">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/labels/">Labels</a>
+									</li>
+																		<li class="nav-page-controls">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/page-controls/">Page Controls</a>
+									</li>
+																		<li class="nav-pickers selected">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/">Pickers</a>
+									</li>
+																		<li class="nav-progress-indicators">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/progress-indicators/">Progress Indicators</a>
+									</li>
+																		<li class="nav-pull-down-menus">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pull-down-menus/">Pull-Down Menus</a>
+									</li>
+																		<li class="nav-refresh-content-controls">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/refresh-content-controls/">Refresh Content Controls</a>
+									</li>
+																		<li class="nav-segmented-controls">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/segmented-controls/">Segmented Controls</a>
+									</li>
+																		<li class="nav-sliders">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/sliders/">Sliders</a>
+									</li>
+																		<li class="nav-steppers">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/steppers/">Steppers</a>
+									</li>
+																		<li class="nav-switches">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/switches/">Switches</a>
+									</li>
+																		<li class="nav-text-fields">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/text-fields/">Text Fields</a>
+									</li>
+																	</ul>
+							</li>
+														<li class="nav-extensions has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/">Extensions</a>
+								<ul class="sub-side-page-list">
+
+																											<li class="nav-custom-keyboards">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/custom-keyboards/">Custom Keyboards</a>
+									</li>
+																		<li class="nav-file-providers">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/file-providers/">File Providers</a>
+									</li>
+																		<li class="nav-messaging">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/messaging/">Messaging</a>
+									</li>
+																		<li class="nav-photo-editing">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/photo-editing/">Photo Editing</a>
+									</li>
+																		<li class="nav-sharing-and-actions">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/extensions/sharing-and-actions/">Sharing and Actions</a>
+									</li>
+																	</ul>
+							</li>
+														<hr class="sidebar_nav_separator">
+						</ul>
+						<ul class="side sub-side">
+																																			<li class="side-platform">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/macos/">macOS</a>
+															</li>
+																												<li class="side-platform">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/tvos/">tvOS</a>
+															</li>
+																												<li class="side-platform">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/watchos/">watchOS</a>
+															</li>
+																												<li class="side-platform has-sublist">
+								<a href="https://developer.apple.com/design/human-interface-guidelines/#technologies">Technologies</a>
+																								<ul class="sub-side-page-list">
+																											<li class="nav-accessibility">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/accessibility/">Accessibility</a>
+									</li>
+																																				<li class="nav-airplay">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/airplay/">AirPlay</a>
+									</li>
+																																				<li class="nav-app-clips">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/app-clips/">App Clips</a>
+									</li>
+																																				<li class="nav-apple-pay">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/apple-pay/">Apple Pay</a>
+									</li>
+																																				<li class="nav-augmented-reality">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/augmented-reality/">Augmented Reality</a>
+									</li>
+																																				<li class="nav-business-chat">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/business-chat/">Business Chat</a>
+									</li>
+																																				<li class="nav-carekit">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/carekit/">CareKit</a>
+									</li>
+																																				<li class="nav-carplay">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/carplay/">CarPlay</a>
+									</li>
+																																				<li class="nav-game-center">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/game-center/">Game Center</a>
+									</li>
+																																				<li class="nav-glyphs">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/glyphs/">Glyphs</a>
+									</li>
+																																				<li class="nav-healthkit">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/healthkit/">HealthKit</a>
+									</li>
+																																				<li class="nav-homekit">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/homekit/">HomeKit</a>
+									</li>
+																																				<li class="nav-icloud">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/icloud/">iCloud</a>
+									</li>
+																																				<li class="nav-in-app-purchase">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/in-app-purchase/">In-App Purchase</a>
+									</li>
+																																				<li class="nav-inclusion">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/inclusion/">Inclusion</a>
+									</li>
+																																				<li class="nav-live-photos">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/live-photos/">Live Photos</a>
+									</li>
+																																				<li class="nav-mac-catalyst">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/mac-catalyst/">Mac Catalyst</a>
+									</li>
+																																				<li class="nav-machine-learning">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/machine-learning/">Machine Learning</a>
+									</li>
+																																				<li class="nav-maps">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/maps/">Maps</a>
+									</li>
+																																				<li class="nav-researchkit">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/researchkit/">ResearchKit</a>
+									</li>
+																																				<li class="nav-right-to-left">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/right-to-left/">Right to Left</a>
+									</li>
+																																				<li class="nav-shareplay">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/shareplay/">SharePlay</a>
+									</li>
+																																				<li class="nav-sign-in-with-apple">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple/">Sign in with Apple</a>
+									</li>
+																																				<li class="nav-siri">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/siri/">Siri</a>
+									</li>
+																																				<li class="nav-social-media">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/social-media/">Social Media</a>
+									</li>
+																																				<li class="nav-sf-symbols">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/sf-symbols/">SF Symbols</a>
+									</li>
+																																				<li class="nav-wallet">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/wallet/">Wallet</a>
+									</li>
+																																				<li class="nav-widgets">
+										<a href="https://developer.apple.com/design/human-interface-guidelines/widgets/">Widgets</a>
+									</li>
+																										</ul>
+															</li>
+																				</ul>
+					</nav>
+				</div>
+
+				<!-- Main content -->
+				<div class="column large-9 small-12 hig-content" data-hires="true">
+					<h2 id="pickers">Pickers</h2>
+
+<p>A picker can display one or more scrollable lists of distinct values from which people can choose. In iOS 14 and later, a date picker supports additional ways to choose values, like selecting a day in a calendar view or entering dates and times using a numeric keypad (for guidance, see <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#date-pickers">Date Pickers</a>). Both types of pickers make it easy for people to enter information by choosing single or multipart values.</p>
+
+<div class="device-iphone11-container">
+  <img src="./iOSpicker_files/pickers-hero_2x.png" class="device-iphone11-image-full" alt="Screenshot of the Health app&#39;s cycle tracking screen on iPhone, highlighted to focus on a picker that lists values for cycle length. A translucent gray bar appears horizontally across the center of the picker, indicating the currently selected value of 28 days." data-hires-status="pending">
+  <div class="device-iphone11-frame" alt="" data-hires-status="pending"></div>
+</div>
+
+<p><strong>Consider using a picker to offer medium-to-long lists of items.</strong> If you need to display a fairly short list of choices, consider using a <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pull-down-menus/">pull-down menu</a> instead of a picker. Although a picker makes it easy to scroll quickly through many items, it may add too much visual weight to a short list of items. On the other hand, if you need to present a very large set of items, consider using a list or table. Lists and tables can adjust in height, and tables can include an index, which makes it much faster to target a section of the list. For guidance, see <a href="https://developer.apple.com/design/human-interface-guidelines/ios/views/tables/">Tables</a>.</p>
+
+<p><strong>Use predictable and logically ordered values.</strong> Many values in a picker may be hidden when the scrollable lists are stationary. It's best when people can predict what the hidden values are, such as with an alphabetized list of countries, so they can move through the items quickly.</p>
+
+<p><strong>Avoid switching screens to show a picker.</strong> A picker works well when displayed in context, below or in proximity to the field being edited. A picker typically appears at the bottom of the screen or in a popover.</p>
+
+<p>For developer guidance, see <a href="https://developer.apple.com/documentation/uikit/uipickerview">UIPickerView</a>.</p>
+
+<h3 id="date-pickers">Date Pickers</h3>
+
+<p>A date picker is an efficient interface for selecting a specific date, time, or both, using touch, a keyboard, or a pointing device. You can display a date picker in one of the following styles:</p>
+
+<ul>
+<li>Inline — An editable field that fits in a small space, like a list or table row, and expands to display an editing view</li>
+<li>Compact — A label that expands to display an editing view in a modal context</li>
+<li>Wheels — The traditional set of scrolling wheels</li>
+</ul>
+
+<p>You can also choose the <em>automatic</em> style to let the system use the current platform and date picker mode to determine an appropriate display style.</p>
+
+<div class="row no-padding-top no-padding-bottom">
+    <div class="column large-6 small-12">
+
+<div class="device-iphone11-container">
+  <img src="./iOSpicker_files/date-picker-date_2x.png" class="device-iphone11-image-full" alt="Screenshot of a reminder&#39;s details screen in edit mode. Below the current selected date of Friday, July 10, 2020, the expanded date picker displays this date in a month view, which also contains controls that let people choose a different month or year." data-hires-status="pending">
+  <div class="device-iphone11-frame" alt="" data-hires-status="pending"></div>
+</div>
+
+<p class="typography-caption text-center">An inline date picker in date mode</p>
+
+</div>
+    <div class="column large-6 small-12">
+
+<div class="device-iphone11-container">
+  <img src="./iOSpicker_files/date-picker-time_2x.png" class="device-iphone11-image-full" alt="Screenshot of a reminder&#39;s details screen in edit mode. Below the current selected time of 2:00 PM, the expanded time picker displays a numeric key pad." data-hires-status="pending">
+  <div class="device-iphone11-frame" alt="" data-hires-status="pending"></div>
+</div>
+
+<p class="typography-caption text-center">An inline date picker in time mode</p>
+
+</div>
+</div>
+
+<p>A date picker has four modes, each of which presents a different set of selectable values.</p>
+
+<ul>
+<li><strong>Date.</strong> Displays months, days of the month, and years.</li>
+<li><strong>Time.</strong> Displays hours, minutes, and (optionally) an AM/PM designation.</li>
+<li><strong>Date and time.</strong> Displays dates, hours, minutes, and (optionally) an AM/PM designation.</li>
+<li><strong>Countdown timer.</strong> Displays hours and minutes, up to a maximum of 23 hours and 59 minutes. This mode isn't available in the compact style.</li>
+</ul>
+
+<p>The exact values shown in a date picker, and their order, depend on the user’s locale.</p>
+
+<p><strong>Use a compact date picker when space is constrained.</strong> When collapsed, the compact style displays a button that shows the current value in your app's accent color. When people tap the button, the date picker expands into a modal view, providing access to a familiar calendar-style editor and time picker. Within the modal view, people can make multiple edits to dates and times before tapping outside the view to confirm their choices.</p>
+
+<p><strong>Consider providing less granularity when specifying minutes.</strong> By default, a minute list includes 60 values (0 to 59). You can optionally increase the minute interval as long as it divides evenly into 60. For example, you might want quarter-hour intervals (0, 15, 30, and 45).</p>
+
+<p>For developer guidance, see <a href="https://developer.apple.com/documentation/uikit/uidatepicker">UIDatePicker</a>.</p>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	</main>
+
+	<aside id="router" class="nextrouter no-padding-top no-padding-bottom router-hig">
+	    <div class="section-content">
+	        <div class="row">
+				<div class="column large-6 small-6 text-left">
+									<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/page-controls/" class="nextrouter-content block">
+
+						<span class="nextrouter-copy no-padding-top no-padding-bottom">
+						<h4>
+							<span class="nextrouter-label">Previous</span>
+							<span class="icon icon-chevronleft"></span> Page Controls
+						</h4>
+					</span>
+
+					</a>
+								</div>
+								<div class="column large-6 small-6 text-right right">
+					<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/progress-indicators/" class="nextrouter-content block">
+
+						<span class="nextrouter-copy no-padding-top no-padding-bottom">
+							<h4>
+								<span class="nextrouter-label">Next</span>
+								Progress Indicators <span class="icon icon-chevronright"></span>
+							</h4>
+						</span>
+
+					</a>
+				</div>
+							</div>
+		</div>
+	</aside>
+
+	<link rel="stylesheet" href="./iOSpicker_files/footer.dist.css">
+<footer id="footer" class="footer" role="contentinfo" aria-labelledby="footer-label">
+    <div class="footer-content">
+        <h2 class="footer-label" id="footer-label">Developer Footer</h2>
+	<nav class="footer-breadcrumbs" aria-label="Breadcrumbs">
+		<a href="https://developer.apple.com/" class="home footer-breadcrumbs-home"><span aria-hidden="true" class="footer-breadcrumbs-home-icon" data-hires-status="pending"></span><span class="footer-breadcrumbs-home-label">Developer</span></a>
+		<div class="footer-breadcrumbs-path">
+			<ol class="footer-breadcrumbs-list">
+				<li class="footer-breadcrumbs-item">
+					<a href="https://developer.apple.com/design/">Design</a>
+				</li>
+				
+				<li class="footer-breadcrumbs-item">
+					<a href="https://developer.apple.com/design/human-interface-guidelines/">Human Interface Guidelines</a>
+				</li>
+				
+				<li class="footer-breadcrumbs-item">
+					<a href="https://developer.apple.com/design/human-interface-guidelines/ios/">iOS</a>				</li>
+				
+				<li class="footer-breadcrumbs-item">
+					<a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/">Controls</a>
+				</li>				
+				<li class="footer-breadcrumbs-item">
+					Pickers
+				</li>			</ol>
+		</div>
+	</nav>
+	        <nav class="footer-directory with-5-columns" aria-label="Apple Developer Directory" role="navigation">
+    <!--googleoff: all-->
+    <div class="footer-directory-column">
+        <input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-discover">
+        <div class="footer-directory-column-section">
+            <label class="footer-directory-column-section-label" for="footer-directory-column-section-state-discover">
+                <h3 class="footer-directory-column-section-title"><a href="https://developer.apple.com/discover/">Discover</a></h3>
+            </label>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#footer-directory-column-section-state-discover" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+            <ul class="footer-directory-column-section-list">
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/ios/">iOS</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/ipados/">iPadOS</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/macos/">macOS</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/tvos/">tvOS</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/watchos/">watchOS</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/safari/">Safari and Web</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/games/">Games</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/business/">Business</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/education/">Education</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/wwdc/">WWDC</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-directory-column">
+        <input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-design">
+        <div class="footer-directory-column-section">
+            <label class="footer-directory-column-section-label" for="footer-directory-column-section-state-design">
+                <h3 class="footer-directory-column-section-title"><a href="https://developer.apple.com/design/">Design</a></h3>
+            </label>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#footer-directory-column-section-state-design" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+            <ul class="footer-directory-column-section-list">
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/design/human-interface-guidelines/">Human Interface Guidelines</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/design/resources/">Resources</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/videos/design/">Videos</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/design/awards/">Apple Design Awards</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/fonts/">Fonts</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/accessibility/">Accessibility</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/localization/">Localization</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/accessories/">Accessories</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-directory-column">
+        <input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-develop">
+        <div class="footer-directory-column-section">
+            <label class="footer-directory-column-section-label" for="footer-directory-column-section-state-develop">
+                <h3 class="footer-directory-column-section-title"><a href="https://developer.apple.com/develop/">Develop</a></h3>
+            </label>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#footer-directory-column-section-state-develop" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+            <ul class="footer-directory-column-section-list">
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/xcode/">Xcode</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/swift/">Swift</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/swift-playgrounds/">Swift Playgrounds</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/testflight/">TestFlight</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/documentation/">Documentation</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/videos/">Videos</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/download/">Downloads</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-directory-column">
+        <input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-distribute">
+        <div class="footer-directory-column-section">
+            <label class="footer-directory-column-section-label" for="footer-directory-column-section-state-distribute">
+                <h3 class="footer-directory-column-section-title"><a href="https://developer.apple.com/distribute/">Distribute</a></h3>
+            </label>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#footer-directory-column-section-state-distribute" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+            <ul class="footer-directory-column-section-list">
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/programs/">Developer Program</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/app-store/">App Store</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/app-store/review/">App Review</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/macos/distribution/">Mac Software</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/business/distribute/">Apps for Business</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/safari/extensions/">Safari Extensions</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/app-store/promote/">Marketing Resources</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/softwarelicensing/">Trademark Licensing</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-directory-column">
+        <input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-support">
+        <div class="footer-directory-column-section">
+            <label class="footer-directory-column-section-label" for="footer-directory-column-section-state-support">
+                <h3 class="footer-directory-column-section-title"><a href="https://developer.apple.com/support/">Support</a></h3>
+            </label>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#footer-directory-column-section-state-support" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+            <ul class="footer-directory-column-section-list">
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/support/articles/">Articles</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/forums/">Developer Forums</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/bug-reporting/">Feedback &amp; Bug&nbsp;Reporting</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/system-status/">System Status</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/contact/">Contact Us</a></li>
+            </ul>
+        </div>
+        <input class="footer-directory-column-section-state" type="checkbox" id="footer-directory-column-section-state-account">
+        <div class="footer-directory-column-section">
+            <label class="footer-directory-column-section-label" for="footer-directory-column-section-state-account">
+                <h3 class="footer-directory-column-section-title"><a href="https://developer.apple.com/account/">Account</a></h3>
+            </label>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#footer-directory-column-section-state-account" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-open"> <span class="footer-directory-column-section-anchor-label">Open Menu</span> </a>
+            <a href="https://developer.apple.com/design/human-interface-guidelines/ios/controls/pickers/#" class="footer-directory-column-section-anchor footer-directory-column-section-anchor-close"> <span class="footer-directory-column-section-anchor-label">Close Menu</span> </a>
+            <ul class="footer-directory-column-section-list">
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://developer.apple.com/account/ios/certificate/">Certificates, Identifiers &amp; Profiles</a></li>
+                <li class="footer-directory-column-section-item"><a class="footer-directory-column-section-link" href="https://appstoreconnect.apple.com/">App Store Connect</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--googleon: all-->
+</nav>
+        <section class="footer-mini" vocab="http://schema.org/" typeof="Organization">
+	<div class="footer-mini-news">
+		<div class="copy">
+			To view the latest developer news, visit <a href="https://developer.apple.com/news/">News and Updates</a>.
+		</div>
+		<div class="content">
+			<div class="color-scheme-toggle" role="radiogroup" tabindex="0" aria-label="Select a color scheme preference">
+
+				<label data-color-scheme-option="light">
+
+					<input type="radio" value="light" onchange="window.setPreferredColorScheme(event.target.value)">
+
+					<div class="text">Light</div>
+
+				</label>
+
+				<label data-color-scheme-option="dark">
+
+					<input type="radio" value="dark" onchange="window.setPreferredColorScheme(event.target.value)">
+
+					<div class="text">Dark</div>
+
+				</label>
+
+				<label data-color-scheme-option="auto">
+
+					<input type="radio" value="auto" onchange="window.setPreferredColorScheme(event.target.value)">
+
+					<div class="text">Auto</div>
+
+				</label>
+
+			</div>
+			<script async="" src="./iOSpicker_files/color-scheme-toggle.js"></script>
+		</div>
+	</div>
+	<link rel="stylesheet" href="./iOSpicker_files/language-dropdown.css">
+	<div class="language-dropdown dropdown-container hidden">
+		<select class="dropdown" aria-label="Language Dropdown"></select>
+		<span class="dropdown-icon icon icon-chevrondown" aria-hidden="true"></span>
+	</div>
+	<script async="" src="./iOSpicker_files/jquery.language-dropdown.js"></script>
+	<div class="footer-mini-legal">
+		<div class="footer-mini-legal-copyright">Copyright ©  2021 <a href="https://www.apple.com/">Apple Inc.</a> All rights reserved.</div>
+		<div class="footer-mini-legal-links">
+			<a class="footer-mini-legal-link" href="https://www.apple.com/legal/internet-services/terms/site.html">Terms of Use</a>
+			<a class="footer-mini-legal-link" href="https://www.apple.com/legal/privacy/en-ww/">Privacy Policy</a>
+			<a class="footer-mini-legal-link" href="https://developer.apple.com/support/terms/">Agreements and Guidelines</a>
+		</div>
+	</div>
+</section>
+
+    </div>
+</footer>
+
+
+</body><loom-container id="lo-engage-ext-container"><div></div><loom-shadow classname="resolved"></loom-shadow></loom-container></html>
